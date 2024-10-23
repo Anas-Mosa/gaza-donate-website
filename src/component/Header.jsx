@@ -5,7 +5,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-black bg-opacity-20 p-4 z-10 absolute w-full">
+    <header className="bg-transparent bg-opacity-30 p-4 z-10 absolute w-full h-full">
       <div className="container mx-auto flex justify-between items-center">
         <Link className="text-2xl font-bold text-white "><img src={logo} alt="logo" className='w-24' /></Link>
 
@@ -34,12 +34,12 @@ const Header = () => {
         <nav
           className={`${
             isMenuOpen ? 'block' : 'hidden'
-          } lg:block absolute lg:static right-12 top-12 text-white  bg-black bg-opacity-10 lg:bg-transparent z-10`}
+          } lg:block absolute lg:static right-12 top-4 text-white  bg-black bg-opacity-10 lg:bg-transparent z-10 rounded-2xl`}
         >
           <ul className="flex flex-col lg:flex-row lg:space-x-4 p-4 lg:p-0 space-y-2 lg:space-y-0">
           <li>
-              <Link to="/home" className="block px-4 py-2 text-write bg-orange-700 font-bold text-xl hover:text-orange-700 hover:bg-transparent hover:border-orange-700 hover:border-2 rounded-2xl  ">
-              أعن اهلك
+              <Link to="/signIn" className="block px-4 py-2 text-write bg-orange-700 font-bold text-xl hover:text-orange-700 hover:bg-transparent hover:border-orange-700 hover:border-2 rounded-2xl  ">
+              سجل الان
               </Link>
             </li>
             <li>

@@ -10,14 +10,14 @@ function SignIn() {
         </h2>
         <p className="mt-2 text-center text-sm text-gray-600">
           أو{' '}
-          <NavLink to="/signup" className="font-medium text-indigo-600 hover:text-indigo-500">
+          <NavLink to="/signup" className="font-medium text-orange-700 hover:text-orange-600">
             إنشاء حساب جديد
           </NavLink>
         </p>
       </div>
 
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-        <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+        <div className="bg-white py-8 px-4 shadow rounded-3xl sm:px-10">
           <form className="space-y-6" action="#" method="POST">
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700">
@@ -30,7 +30,7 @@ function SignIn() {
                   type="email"
                   autoComplete="email"
                   required
-                  className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                  className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-700 focus:border-orange-700 sm:text-sm"
                   placeholder="البريد الإلكتروني"
                 />
               </div>
@@ -47,7 +47,7 @@ function SignIn() {
                   type="password"
                   autoComplete="current-password"
                   required
-                  className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                  className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-700 focus:border-orange-700 sm:text-sm"
                   placeholder="كلمة المرور"
                 />
               </div>
@@ -67,7 +67,7 @@ function SignIn() {
               </div>
 
               <div className="text-sm">
-                <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                <a href="#" className="font-medium text-orange-700 hover:text-orange-600">
                   نسيت كلمة المرور؟
                 </a>
               </div>
@@ -76,7 +76,7 @@ function SignIn() {
             <div>
               <button
                 type="submit"
-                className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-orange-700 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-700"
               >
                 تسجيل الدخول
               </button>
@@ -93,31 +93,31 @@ function SignIn() {
               </div>
             </div>
 
-            <div className="mt-6 grid grid-cols-3 gap-3">
+            <div className="mt-6 flex justify-center gap-3 text-center mx-auto">
               <div>
                 <a
                   href="#"
-                  className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
+                  className="w-12 h-12 inline-flex justify-center items-center py-2 px-4 border border-orange-700 rounded-full shadow-sm bg-white text-sm font-medium text-orange-700 hover:bg-orange-700 hover:text-white"
                 >
-                  <FaFacebookF className="h-5 w-5 text-blue-600" />
+                  <FaFacebookF className="h-full w-full  hover:text-white" />
                 </a>
               </div>
 
               <div>
                 <a
                   href="#"
-                  className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
+                  className="w-12 h-12 inline-flex justify-center items-center py-2 px-4 border border-orange-700 rounded-full shadow-sm bg-white text-sm font-medium text-orange-700 hover:bg-orange-700 hover:text-white"
                 >
-                  <FaGoogle className="h-5 w-5 text-red-600" />
+                  <FaGoogle className="h-full w-full  hover:text-white" />
                 </a>
               </div>
 
               <div>
                 <a
                   href="#"
-                  className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
+                  className="w-12 h-12 inline-flex justify-center items-center py-2 px-4 border border-orange-700 rounded-full shadow-sm bg-white text-sm font-medium text-orange-700 hover:bg-orange-700 hover:text-white"
                 >
-                  <FaTwitter className="h-5 w-5 text-blue-400" />
+                  <FaTwitter className="h-full w-full  hover:text-white" />
                 </a>
               </div>
             </div>

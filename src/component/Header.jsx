@@ -5,9 +5,9 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-transparent bg-opacity-30 p-4 z-10 absolute w-full h-full">
+    <header className="bg-transparent bg-opacity-30 p-4 fixed top-0 w-full z-20">
       <div className="container mx-auto flex justify-between items-center">
-        <Link className="text-2xl font-bold text-white "><img src={logo} alt="logo" className='w-24' /></Link>
+        <Link to={"/"} className="text-2xl font-bold text-white "><img src={logo} alt="logo" className='w-36' /></Link>
 
         {/* Hamburger Menu Button */}
         <button
@@ -38,27 +38,22 @@ const Header = () => {
         >
           <ul className="flex flex-col lg:flex-row lg:space-x-4 p-4 lg:p-0 space-y-2 lg:space-y-0">
           <li>
-              <Link to="/signIn" className="block px-4 py-2 text-write bg-orange-700 font-bold text-xl hover:text-orange-700 hover:bg-transparent hover:border-orange-700 hover:border-2 rounded-2xl  ">
+              <Link to="/WhoAreYou" className=" block px-4 py-2 text-write bg-orange-700 font-bold text-xl hover:text-orange-700 hover:bg-transparent hover:border-orange-700 hover:border-2 rounded-2xl  ">
               سجل الان
               </Link>
             </li>
             <li>
-              <Link to="/home" className="block px-4 py-2 text-orange-700 font-extrabold text-xl hover:text-orange-800 rounded ">
+              <Link to="/contactUs" className="block px-4 py-2 text-orange-700 font-extrabold text-xl hover:text-orange-800 rounded ">
               اتصل بنا
               </Link>
             </li>
             <li>
-              <Link to="/about" className="block px-4 py-2 text-orange-700 font-extrabold text-xl hover:text-orange-800 rounded ">
-                من نحن
-              </Link>
-            </li>
-            <li>
-              <Link to="/services" className="block px-4 py-2 text-orange-700 font-extrabold text-xl hover:text-orange-800 rounded ">
+              <Link to="/WhyGaza" className="block px-4 py-2 text-orange-700 font-extrabold text-xl hover:text-orange-800 rounded ">
                 لماذا غزة
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="block px-4 py-2 text-orange-700 font-extrabold text-xl hover:text-orange-800 rounded ">
+              <Link to="/" className="block px-4 py-2 text-orange-700 font-extrabold text-xl hover:text-orange-800 rounded ">
                 الرئيسية
               </Link>
             </li>

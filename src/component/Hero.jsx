@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Hero() {
   return (
 <div className="">
-    <div className="bg-black bg-opacity-30 w-full h-full absolute"></div>
+    <div className="bg-black bg-opacity-35 w-full h-full absolute z-10"></div>
       <div
         style={{
           zIndex: 0,
@@ -25,13 +25,14 @@ function Hero() {
             border: 0,
           }}
           allowFullScreen
-          allow="fullscreen"
+          
         ></iframe>
+        <div className="bg-black w-full h-full absolute"></div>
       </div>
 <div className="flex justify-center ">
         <div className="absolute top-80 text-center z-20 ">
-          <h1 className="text-orange-700 font-extrabold text-4xl box-">مساعدتك اليوم يمكن أن تصنع غداً أفضل لأحدهم</h1>
-          <Link to="/home" className="block px-4 py-2 my-5 mx-auto w-32 text-write bg-orange-700 font-bold text-xl hover:text-white rounded-2xl  ">
+          <h1 className="marhey text-orange-700 font-extrabold text-4xl box-">مساعدتك اليوم يمكن أن تصنع غداً أفضل لأحدهم</h1>
+          <Link to="/WhoAreYou" className=" block px-4 py-2 my-5 mx-auto w-32 text-write bg-orange-700 font-bold text-xl hover:text-white rounded-2xl  ">
               سجل الان
               </Link>
         </div>

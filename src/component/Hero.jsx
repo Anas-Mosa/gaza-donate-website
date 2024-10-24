@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Hero() {
   return (
 <div className="">
-    <div className="bg-black bg-opacity-35 w-full h-full absolute z-10"></div>
+    <div className="bg-black bg-opacity-35 w-full h-full absolute z-10 pointer-events-none"></div>
       <div
         style={{
           zIndex: 0,
